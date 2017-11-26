@@ -56,36 +56,34 @@ Then install these packages:
 
 Once Anaconda, SublimeLinter, and SublimeLinter-pyflakes are installed, navigate to **Preferences >> Package Settings >> Anaconda >> Settings - User** and add the following settings:
 
-    ```
-    {
-      "anaconda_linting": false,
-      "swallow_startup_errors": true,
-      "hide_snippets_on_completion": true,
-      "complete_parameters": true,
-      "auto_formatting_timeout": 5
-    }
-    ```
+```json
+{
+  "anaconda_linting": false,
+  "swallow_startup_errors": true,
+  "hide_snippets_on_completion": true,
+  "complete_parameters": true,
+  "auto_formatting_timeout": 5
+}
+```
 
 Open any *.py Python file in Sublime. Navigate to **Preferences >> Settings - Syntax Specific** and add the following into Python.sublime-settings:
 
-    ```
-    {
-      "auto_indent": true,
-      "rulers": [79],
-      "smart_indent": true,
-      "trim_automatic_white_space": true,
-      "use_tab_stops": true,
-      "word_wrap": false,
-      "wrap_width": 80
-    }
-    ```
+```json
+{
+  "auto_indent": true,
+  "rulers": [79],
+  "smart_indent": true,
+  "trim_automatic_white_space": true,
+  "use_tab_stops": true,
+  "word_wrap": false,
+  "wrap_width": 80
+}
+```
 
 Right-click in the Python file and choose **SublimeLiner >> Toggle Linter...** from the context menu. Make sure **pyflakes** is enabled.
 
 ## Packages for LaTeX
 
-Sublime can be used to edit and compile LaTeX documents:
-
-First, make sure you have [MiKTeX](https://miktex.org/) installed. Also, install [Sumatra PDF](https://www.sumatrapdfreader.org/free-pdf-reader.html) and [GhostScript](https://www.ghostscript.com/) for extended capabilities. Then install the following package:
+Sublime can be used to edit and compile LaTeX documents. First, make sure you have [MiKTeX](https://miktex.org/) installed. Also, install [Sumatra PDF](https://www.sumatrapdfreader.org/free-pdf-reader.html) and [GhostScript](https://www.ghostscript.com/) for extended capabilities. Then install the following package:
 
 - [LaTeXTools](https://packagecontrol.io/packages/LaTeXTools)
