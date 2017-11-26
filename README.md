@@ -14,10 +14,10 @@ This README provides instructions to my fellow MAHI Lab members for duplicating 
 
 First things first: change themes! My favorites:
 
-- [Material Theme]
-- [Spacegray]
+- [Material Theme](https://packagecontrol.io/packages/Material%20Theme)
+- [Spacegray](https://packagecontrol.io/packages/Theme%20-%20Spacegray)
 
-Also, install [A File Icon] for unique sidebar file icons for literally every file extension known to man.
+Also, install [A File Icon](https://packagecontrol.io/packages/A%20File%20Icon) for unique sidebar file icons for literally every file extension known to man.
 
 # Packages Everyone Should Have
 
@@ -27,7 +27,6 @@ These packages add awesome functionality to Sublime:
 - [SideBarEnhancements](https://packagecontrol.io/packages/SideBarEnhancements)
 - [SyncedSideBar](https://packagecontrol.io/packages/SyncedSideBar)
 - [BracketHighlighter](https://packagecontrol.io/packages/BracketHighlighter)
-- [SFTP](https://packagecontrol.io/packages/SFTP)
 
 # Packages for Git Integration
 
@@ -40,11 +39,19 @@ These packages make using Git with Sublime easy:
 
 These packages turn Sublime into an awesome lightweight Python IDE:
 
-- [Anaconda](https://packagecontrol.io/packages/Anaconda) (**required**)
-- [SublimeLinter](https://packagecontrol.io/packages/SublimeLinter) (**required**)
-- [SublimeLinter-pyflakes](https://packagecontrol.io/packages/SublimeLinter-pyflakes) (**required**)
+First install pyflakes with pip from the command line:
 
-Once Anaconda, SublimeLinter, and SublimeLinter-pyflakes are installed, navitage to **Preferences >> Package Settings >> Anaconda >> Settings - User** and add the following settings:
+```
+pip install pyflakes
+```
+
+Then install these packages:
+
+- [Anaconda](https://packagecontrol.io/packages/Anaconda)
+- [SublimeLinter](https://packagecontrol.io/packages/SublimeLinter)
+- [SublimeLinter-pyflakes](https://packagecontrol.io/packages/SublimeLinter-pyflakes)
+
+Once Anaconda, SublimeLinter, and SublimeLinter-pyflakes are installed, navigate to **Preferences >> Package Settings >> Anaconda >> Settings - User** and add the following settings:
 
     ```json
     {
@@ -71,3 +78,18 @@ Open any *.py Python file in Sublime. Navigate to **Preferences >> Settings - Sy
     ```
 
 Right-click in the Python file and choose **SublimeLiner >> Toggle Linter...** from the context menu. Make sure **pyflakes** is enabled.
+
+# Packages for LaTeX
+
+These packages make it possible to edit and compile LaTeX in Sublime:
+
+First, make sure you have [MiKTeX](https://miktex.org/) installed. Also, install [Sumatra PDF](https://www.sumatrapdfreader.org/free-pdf-reader.html) and [GhostScript](https://www.ghostscript.com/) for extended capabilities. Then install the following package:
+
+- [LaTeXTools](https://packagecontrol.io/packages/LaTeXTools)
+
+# Packages MAHI Lab Developers Should Have
+
+These packages make development for MAHI Lab hardware (e.g. CompactRIO) easier:
+
+- [SFTP](https://packagecontrol.io/packages/SFTP)
+- [Markdown Preview](https://packagecontrol.io/packages/Markdown%20Preview)
