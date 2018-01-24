@@ -82,6 +82,11 @@ Open any *.py Python file in Sublime. Navigate to **Preferences >> Settings - Sy
 
 Right-click in the Python file and choose **SublimeLiner >> Toggle Linter...** from the context menu. Make sure **pyflakes** is enabled.
 
+## Packages for C/C++ Development
+
+- [EasyClangComplete](https://packagecontrol.io/packages/EasyClangComplete)
+- [C++StartingKit](https://packagecontrol.io/packages/C%2B%2B%20Starting%20Kit)
+
 ## Packages for LaTeX
 
 Sublime can be used to edit and compile LaTeX documents. First, make sure you have [MiKTeX](https://miktex.org/) installed. Also, install [Sumatra PDF](https://www.sumatrapdfreader.org/free-pdf-reader.html) and [GhostScript](https://www.ghostscript.com/) for extended capabilities. Then install the following package:
