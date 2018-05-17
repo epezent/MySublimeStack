@@ -12,8 +12,9 @@ This document provides instructions to my fellow MAHI Lab members for duplicatin
 
 ## Themes/Appearance
 
-First things first: change themes! My favorites:
+First things first: change color schemes and themes! My favorites:
 
+- [Dracula Color Scheme](https://draculatheme.com/)
 - [Material Theme](https://packagecontrol.io/packages/Material%20Theme)
 - [Spacegray](https://packagecontrol.io/packages/Theme%20-%20Spacegray)
 
@@ -37,12 +38,13 @@ These packages add awesome functionality to Sublime:
 
 ## C++
 
-Believe it or not, it's possible to make C++ development in Sublime not *absolutey* terrible with a few plugins and tricks. First, install [Clang](https://clang.llvm.org/) and make sure its binaries are in your Path. Next, get these plugins.
+Believe it or not, it's possible to make C++ development in Sublime pretty enjoyable with a few plugins and tricks. First, install [Clang](https://clang.llvm.org/) and make sure its binaries are in your Path. Next, get these plugins.
 
 - [C++11](https://packagecontrol.io/packages/C%2B%2B11)
 - [EasyClangComplete](https://packagecontrol.io/packages/EasyClangComplete)
 - [ClangFormat](https://packagecontrol.io/packages/Clang%20Format)
 - [CMake](https://packagecontrol.io/packages/CMake)
+- [DoxyDoxygen](https://packagecontrol.io/packages/DoxyDoxygen)
 
 Make sure you read EasyClangComplete's documentation so you understand how it searches for include files. I found it easiest to add them to my ```.sublime_project``` using the ```"ecc_common_flags"``` variable:
 
@@ -56,6 +58,8 @@ Make sure you read EasyClangComplete's documentation so you understand how it se
   ]
 }
 ```
+
+Even though you may use a different compiler from Clang, such as MSVC or GCC, ECC will continue to provide valuable auto-completion and warnings while you code (just realize it may not catch the same exact warnings your compiler does)
 
 If you use **CMake** and/or **make**, consider adding custom build systems (either on a project level, or plugin level). For example, I have these build systems defined in my ```.sublime_project``` file:
 
@@ -85,6 +89,7 @@ If you use **CMake** and/or **make**, consider adding custom build systems (eith
   }
 ]
 ```
+
 
 ## Python
 
